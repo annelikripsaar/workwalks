@@ -1,10 +1,12 @@
+const { createFilePath } = require("gatsby-source-filesystem")
+
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 
   const blogPostTemplate = require.resolve(`./src/templates/blogTemplate.js`)
 
   const result = await graphql(`
-    {
+    query {
       allMarkdownRemark(
         sort: { order: DESC, fields: [frontmatter___date] }
         limit: 1000
@@ -36,4 +38,10 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       },
     })
   })
+}
+
+exports.onCreateNode = ({ node, getNode }) => {
+  if (node.internal.type === "MarkdownRemark") {
+    console.log(createFilePath({ node, getNode, basePath: "pages" }))
+  }
 }

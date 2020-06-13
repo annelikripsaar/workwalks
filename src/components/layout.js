@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "@emotion/styled"
+import { Global, css } from "@emotion/core"
 import { useStaticQuery, Link, graphql } from "gatsby"
 
 import { rhythm } from "../utils/typography"
@@ -40,6 +41,13 @@ export default function Layout({ children }) {
 
   return (
     <Container>
+      <Global
+        styles={css`
+          body {
+            margin: 0;
+          }
+        `}
+      />
       <Link to={"/"}>
         <SiteTitle>{data.site.siteMetadata.title}</SiteTitle>
       </Link>

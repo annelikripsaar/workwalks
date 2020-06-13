@@ -1,19 +1,22 @@
 import React from "react"
 import Layout from "../components/layout"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
+import SEO from "../components/seo"
 
 export default function Home({ data }) {
-  console.log(data)
   return (
     <Layout>
+      <SEO />
       <h1>Amazing Pandas Eating Things</h1>
       <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <div key={node.id}>
-          <h3>
-            {node.frontmatter.title} <span>— {node.frontmatter.date}</span>
-          </h3>
-          <p>{node.excerpt}</p>
+          <Link to={node.frontmatter.slug}>
+            <h3>
+              {node.frontmatter.title} <span>— {node.frontmatter.date}</span>
+            </h3>
+            <p>{node.excerpt}</p>
+          </Link>
         </div>
       ))}
       <div>
@@ -36,6 +39,7 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "MMMM DD, YYYY")
+            slug
           }
           excerpt
         }
