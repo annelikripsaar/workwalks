@@ -7,12 +7,22 @@ media_folder: static/assets
 public_folder: /assets
 
 collections:
-  - name: blog
-    label: Blog
-    folder: blog
+  - name: projects
+    label: Project
+    folder: projects
     create: true
+    slug: "{{slug}}"
     fields:
-      - { name: slug, label: Slug }
-      - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
-      - { name: body, label: Body, widget: markdown }
+      - { name: author, label: Author }
+      - { name: body, label: "English description", widget: markdown }
+      - { name: est, label: "Estonian description", widget: markdown }
+      - { name: ru, label: "Russian description", widget: markdown }
+      - {
+          name: galleryImages,
+          label: "Gallery images",
+          widget: list,
+          summary: "{{fields.image}}",
+          field: { name: image, label: Image, widget: image },
+          required: false,
+        }

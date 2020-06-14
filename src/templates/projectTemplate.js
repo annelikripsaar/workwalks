@@ -10,15 +10,12 @@ export default function Template({
   const { frontmatter, html, excerpt } = markdownRemark
   return (
     <Layout>
-      <div className="blog-post-container">
+      <div>
         <SEO title={frontmatter.title} description={excerpt} />
-        <div className="blog-post">
+        <div>
           <h1>{frontmatter.title}</h1>
           <h2>{frontmatter.date}</h2>
-          <div
-            className="blog-post-content"
-            dangerouslySetInnerHTML={{ __html: html }}
-          />
+          <div dangerouslySetInnerHTML={{ __html: html }} />
         </div>
       </div>
     </Layout>
