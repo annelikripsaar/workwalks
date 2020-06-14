@@ -5,5 +5,13 @@
  */
 
 module.exports = {
-  plugins: ["gatsby-plugin-netlify-cms", "gatsby-plugin-react-helmet"],
+  plugins: [
+    {
+      resolve: `gatsby-plugin-netlify-cms`,
+      options: {
+        enableIdentityWidget: true,
+      },
+    },
+    "gatsby-plugin-react-helmet",
+  ],
 }
