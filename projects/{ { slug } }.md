@@ -1,5 +1,5 @@
 ---
-title: Tracing Ties
+title: Tracing Tiez
 author: Anneli Kripsaar
 est: >-
   Pealkiri: Seoseid otsides\
