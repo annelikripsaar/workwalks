@@ -18,7 +18,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Work Walks</title>
       </Helmet>
-      <img style={{ width: "70vw" }} src="images/esitlused-2020.gif"></img>
+      <img style={{ width: "70vw" }} src="images/workwalks-banner.gif"></img>
     </div>
   )
 }
