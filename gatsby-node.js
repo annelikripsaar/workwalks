@@ -15,6 +15,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       name: "slug",
       value: slug,
     })
+
     const est = remark()
       .use(remarkHTML)
       .processSync(node.frontmatter.est)
@@ -23,6 +24,16 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       node,
       name: "est",
       value: est,
+    })
+
+    const ru = remark()
+      .use(remarkHTML)
+      .processSync(node.frontmatter.ru)
+      .toString()
+    createNodeField({
+      node,
+      name: "ru",
+      value: ru,
     })
   }
 }

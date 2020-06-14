@@ -25,6 +25,12 @@ module.exports = {
         path: `${__dirname}/static/fonts`,
       },
     },
+    {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: require.resolve(`${__dirname}/src/components/layout`),
+      },
+    },
     "gatsby-transformer-remark",
     "gatsby-plugin-emotion",
     {
@@ -49,5 +55,7 @@ module.exports = {
     },
     "gatsby-plugin-offline",
     "gatsby-plugin-react-helmet",
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
   ],
 }

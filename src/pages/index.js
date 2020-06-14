@@ -1,24 +1,18 @@
 import React from "react"
-import Layout from "../components/layout"
 import { Link, graphql } from "gatsby"
 import SEO from "../components/seo"
+import GalleryMarquee from "../components/GalleryMarquee"
 
 export default function Home({ data }) {
   return (
-    <Layout>
+    <>
       <SEO />
-      <h1>Work Walks</h1>
-      <h4>{data.allMarkdownRemark.totalCount} / 10 projects</h4>
       {data.allMarkdownRemark.edges.map(({ node }) => (
-        <div key={node.id}>
-          <Link to={node.fields.slug}>
-            <h3>
-              {node.frontmatter.title} <span>— {node.frontmatter.author}</span>
-            </h3>
-          </Link>
-        </div>
+        <Link to={node.fields.slug} key={node.id}>
+          <GalleryMarquee images={node.frontmatter.galleryImages} />
+        </Link>
       ))}
-    </Layout>
+    </>
   )
 }
 
@@ -33,6 +27,7 @@ export const query = graphql`
             slug
           }
           frontmatter {
+            galleryImages
             title
             author
           }
