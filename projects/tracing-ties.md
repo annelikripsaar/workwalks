@@ -29,6 +29,10 @@ ru: >-
 
 
   Selle kogu eesmärk on rõhutada, et tegemist on üsnagi universaalsete ja pika ajalooga sümbolitega, mida võib leida traditsioonilisel käsitööl üle maailma. Selle asemel, et eristada üht kultuuri teisest, ühendavad need kirjad eri paigus ja eri aegadel elanud inimesi läbi üldkehtiva visuaalse keele. Neid sidemeid ei saa tõestada ning need võivad sama hästi olla juhuslikud. Sellegipoolest võtab see projekt endale vabaduse lasta korraks faktidest lahti ja lasta vaatajal ise spekuleerida nende sarnasuste üle.
+galleryImages:
+  - /assets/1.png
+  - /assets/2.png
+  - /assets/3.png
 ---
 Title: Tracing Ties\
 Format: website\
