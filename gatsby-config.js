@@ -5,7 +5,12 @@ module.exports = {
     author: `Estonian Academy of Arts' Department of Graphic Design`,
   },
   plugins: [
-    "gatsby-plugin-netlify-cms",
+    {
+      resolve: `gatsby-plugin-netlify-cms`,
+      options: {
+        enableIdentityWidget: true,
+      },
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {
