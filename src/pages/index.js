@@ -11,9 +11,9 @@ export default function Home({ data }) {
       <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <div key={node.id}>
-          <Link to={node.frontmatter.slug}>
+          <Link to={node.fields.slug}>
             <h3>
-              {node.frontmatter.title} <span>— {node.frontmatter.date}</span>
+              {node.frontmatter.title} <span>— {node.frontmatter.author}</span>
             </h3>
             <p>{node.excerpt}</p>
           </Link>
@@ -31,15 +31,17 @@ export default function Home({ data }) {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(sort: { fields: [frontmatter___author], order: DESC }) {
       totalCount
       edges {
         node {
           id
+          fields {
+            slug
+          }
           frontmatter {
             title
-            date(formatString: "MMMM DD, YYYY")
-            slug
+            author
           }
           excerpt
         }

@@ -3,19 +3,19 @@ import { graphql } from "gatsby"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
 
-export default function Template({
-  data, // this prop will be injected by the GraphQL query below.
-}) {
-  const { markdownRemark } = data // data.markdownRemark holds your post data
-  const { frontmatter, html, excerpt } = markdownRemark
+export default function Template({ data }) {
+  const { markdownRemark } = data
+  const { frontmatter, html, excerpt, fields } = markdownRemark
+
   return (
     <Layout>
       <div>
         <SEO title={frontmatter.title} description={excerpt} />
         <div>
           <h1>{frontmatter.title}</h1>
-          <h2>{frontmatter.date}</h2>
+          <h2>{frontmatter.author}</h2>
           <div dangerouslySetInnerHTML={{ __html: html }} />
+          <div dangerouslySetInnerHTML={{ __html: fields.est }} />
         </div>
       </div>
     </Layout>
@@ -23,13 +23,18 @@ export default function Template({
 }
 
 export const pageQuery = graphql`
-  query($slug: String!) {
-    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
+  query {
+    markdownRemark {
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
-        slug
+        galleryImages
         title
+        author
+        est
+        ru
+      }
+      fields {
+        est
       }
       excerpt
     }
