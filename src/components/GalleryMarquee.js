@@ -3,12 +3,11 @@ import styled from "@emotion/styled"
 
 const Marquee = styled.div`
   display: flex;
-  filter: grayscale(1);
 `
 
-export default function GalleryMarquee({ images }) {
+export default function GalleryMarquee({ images, className }) {
   return (
-    <Marquee>
+    <Marquee className={className}>
       {images.map(imageSrc => (
         <img src={imageSrc} key={imageSrc} alt="" />
       ))}
