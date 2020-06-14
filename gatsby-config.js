@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Pandas Eating Lots",
-    description: `A simple description about pandas eating lots...`,
-    author: `gatsbyjs`,
+    title: "Work Walks",
+    description: `An online exhibition of thesis projects completed in isolation by the graduating class of the Department of Graphic Design of the Estonian Academy of Arts.`,
+    author: `Estonian Academy of Arts' Department of Graphic Design`,
   },
   plugins: [
     "gatsby-plugin-netlify-cms",

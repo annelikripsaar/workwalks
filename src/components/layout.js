@@ -22,10 +22,6 @@ const SiteTitle = styled.h3`
   font-style: normal;
 `
 
-const StyledLink = styled(Link)`
-  float: right;
-`
-
 export default function Layout({ children }) {
   const data = useStaticQuery(
     graphql`
@@ -51,8 +47,6 @@ export default function Layout({ children }) {
       <Link to={"/"}>
         <SiteTitle>{data.site.siteMetadata.title}</SiteTitle>
       </Link>
-      <StyledLink to={"/about/"}>About</StyledLink>
-      <StyledLink to="/contact/">Contact</StyledLink>
       {children}
     </Container>
   )
