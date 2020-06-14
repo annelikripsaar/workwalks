@@ -8,7 +8,7 @@ export default function Home({ data }) {
     <Layout>
       <SEO />
       <h1>Work Walks</h1>
-      <h4>{data.allMarkdownRemark.totalCount} posts</h4>
+      <h4>{data.allMarkdownRemark.totalCount} / 10 projects</h4>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <div key={node.id}>
           <Link to={node.fields.slug}>

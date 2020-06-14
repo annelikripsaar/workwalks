@@ -9,14 +9,16 @@ export default function Template({ data }) {
 
   return (
     <Layout>
+      <SEO title={frontmatter.title} description={excerpt} />
       <div>
-        <SEO title={frontmatter.title} description={excerpt} />
-        <div>
-          <h1>{frontmatter.title}</h1>
-          <h2>{frontmatter.author}</h2>
-          <div dangerouslySetInnerHTML={{ __html: html }} />
-          <div dangerouslySetInnerHTML={{ __html: fields.est }} />
-        </div>
+        {frontmatter.galleryImages.map(imageSrc => (
+          <img src={imageSrc} key={imageSrc} alt="" />
+        ))}
+        <h1>{frontmatter.title}</h1>
+        <h2>{frontmatter.author}</h2>
+        <div dangerouslySetInnerHTML={{ __html: html }} />
+        <div dangerouslySetInnerHTML={{ __html: fields.est }} />
+        <div dangerouslySetInnerHTML={{ __html: fields.ru }} />
       </div>
     </Layout>
   )

@@ -13,6 +13,13 @@ module.exports = {
         path: `${__dirname}/projects`,
       },
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "fonts",
+        path: `${__dirname}/static/fonts`,
+      },
+    },
     "gatsby-transformer-remark",
     "gatsby-plugin-emotion",
     {

@@ -1,7 +1,10 @@
 import Typography from "typography"
-import kirkhamTheme from "typography-theme-kirkham"
 
-const typography = new Typography(kirkhamTheme)
+const typography = new Typography({
+  baseFontSize: "16px",
+  headerFontFamily: ["Niina", "sans-serif"],
+  bodyFontFamily: ["Niina", "serif"],
+})
 
 export const { scale, rhythm, options } = typography
 export default typography
