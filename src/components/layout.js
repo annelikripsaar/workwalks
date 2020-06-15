@@ -13,6 +13,7 @@ export default function Layout({ children }) {
         styles={css`
           body {
             margin: 0;
+            background-color: #fe5000;
           }
         `}
       />
