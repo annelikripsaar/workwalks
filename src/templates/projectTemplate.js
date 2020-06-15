@@ -44,38 +44,34 @@ const TextMarqueeInner = styled.div`
   }
 `
 
-export default function Template({ data }) {
+export default function Template({ data, pageContext, galleryImages }) {
+  const { id } = pageContext
   const { markdownRemark } = data
   const { frontmatter, html, excerpt, fields } = markdownRemark
-
   return (
     <>
       <SEO title={frontmatter.title} description={excerpt} />
-      <div>
-        <GalleryMarquee images={frontmatter.galleryImages} />
-        <h1>{frontmatter.title}</h1>
-        <h2>{frontmatter.author}</h2>
-        <TextMarquee>
-          <TextMarqueeInner>
-            <span dangerouslySetInnerHTML={{ __html: fields.ru }} />
-            <span dangerouslySetInnerHTML={{ __html: html }} />
-            <span dangerouslySetInnerHTML={{ __html: fields.est }} />
-            <span dangerouslySetInnerHTML={{ __html: fields.ru }} />
-            <span dangerouslySetInnerHTML={{ __html: html }} />
-            <span dangerouslySetInnerHTML={{ __html: fields.est }} />
-          </TextMarqueeInner>
-        </TextMarquee>
-      </div>
+      <h1>{frontmatter.title}</h1>
+      <h2>{frontmatter.author}</h2>
+      <TextMarquee>
+        <TextMarqueeInner>
+          <span dangerouslySetInnerHTML={{ __html: fields.ru }} />
+          <span dangerouslySetInnerHTML={{ __html: html }} />
+          <span dangerouslySetInnerHTML={{ __html: fields.est }} />
+          <span dangerouslySetInnerHTML={{ __html: fields.ru }} />
+          <span dangerouslySetInnerHTML={{ __html: html }} />
+          <span dangerouslySetInnerHTML={{ __html: fields.est }} />
+        </TextMarqueeInner>
+      </TextMarquee>
     </>
   )
 }
 
 export const pageQuery = graphql`
-  query {
-    markdownRemark {
+  query BlogPostQuery($id: String) {
+    markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
-        galleryImages
         title
         author
       }

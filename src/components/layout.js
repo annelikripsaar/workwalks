@@ -1,12 +1,40 @@
-import React from "react"
-import styled from "@emotion/styled"
+import React, { useRef, useEffect, Fragment } from "react"
 import { Global, css } from "@emotion/core"
-import { Link } from "gatsby"
 import Header from "../components/header"
+import { Link, graphql, useStaticQuery } from "gatsby"
+import GalleryMarquee from "./GalleryMarquee"
+import styled from "@emotion/styled"
+import { AnimatePresence, motion } from "framer-motion"
 
-const Container = styled.div``
+const BWGalleryMarquee = styled(GalleryMarquee)`
+  filter: grayscale(1);
+`
 
-export default function Layout({ children }) {
+export default function Layout({ children, pageContext: { id } }) {
+  const data = useStaticQuery(graphql`
+    query ListQuery {
+      allMarkdownRemark(sort: { fields: [frontmatter___author], order: DESC }) {
+        edges {
+          node {
+            id
+            fields {
+              slug
+            }
+            frontmatter {
+              galleryImages
+            }
+          }
+        }
+      }
+    }
+  `)
+  const activeElementRef = useRef()
+  /*
+  useEffect(() => {
+    if (activeElementRef.current && id) {
+      activeElementRef.current.scrollIntoView()
+    }
+  }, [id, activeElementRef.current])*/
   return (
     <>
       <Global
@@ -21,7 +49,34 @@ export default function Layout({ children }) {
         <Header />
       </Link>
 
-      <Container>{children}</Container>
+      {data.allMarkdownRemark.edges.map(({ node }) => {
+        const isActive = node.id === id
+        return (
+          <Fragment key={node.id}>
+            <Link
+              to={isActive ? "" : node.fields.slug}
+              ref={isActive ? activeElementRef : undefined}
+            >
+              <GalleryMarquee images={node.frontmatter.galleryImages} />
+            </Link>
+            <AnimatePresence>
+              {isActive && (
+                <motion.div
+                  initial="closed"
+                  animate="open"
+                  exit="closed"
+                  variants={{
+                    open: { opacity: 1, height: "auto" },
+                    closed: { opacity: 0, height: 0 },
+                  }}
+                >
+                  {children}
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </Fragment>
+        )
+      })}
     </>
   )
 }

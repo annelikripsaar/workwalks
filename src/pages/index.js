@@ -8,36 +8,6 @@ const BWGalleryMarquee = styled(GalleryMarquee)`
   filter: grayscale(1);
 `
 
-export default function Home({ data }) {
-  return (
-    <>
-      <SEO />
-      {data.allMarkdownRemark.edges.map(({ node }) => (
-        <Link to={node.fields.slug} key={node.id}>
-          <BWGalleryMarquee images={node.frontmatter.galleryImages} />
-        </Link>
-      ))}
-    </>
-  )
+export default function Home() {
+  return <></>
 }
-
-export const query = graphql`
-  query {
-    allMarkdownRemark(sort: { fields: [frontmatter___author], order: DESC }) {
-      totalCount
-      edges {
-        node {
-          id
-          fields {
-            slug
-          }
-          frontmatter {
-            galleryImages
-            title
-            author
-          }
-        }
-      }
-    }
-  }
-`

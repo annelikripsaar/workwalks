@@ -3,6 +3,9 @@ import styled from "@emotion/styled"
 import { keyframes } from "@emotion/core"
 
 const Marquee = styled.div`
+  -webkit-box-shadow: 0px -9px 16px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px -9px 16px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px -9px 16px 0px rgba(0, 0, 0, 0.3);
   position: relative;
   overflow: hidden;
   --offset: 0vw;

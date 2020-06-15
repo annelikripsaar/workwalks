@@ -51,6 +51,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       ) {
         edges {
           node {
+            id
             fields {
               slug
             }
@@ -71,8 +72,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       path: node.fields.slug,
       component: projectTemplate,
       context: {
-        // additional data can be passed via context
-        slug: node.fields.slug,
+        id: node.id,
       },
     })
   })
