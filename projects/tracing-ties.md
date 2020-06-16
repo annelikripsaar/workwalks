@@ -40,9 +40,11 @@ ru: >-
 
   <a href="https://tracingties.com/" target="_blank">https://tracingties.com/</a>
 galleryImages:
-  - /assets/1.png
-  - /assets/2.png
-  - /assets/3.png
+  - /assets/anneli1.png
+  - /assets/anneli2.png
+  - /assets/anneli3.png
+  - /assets/anneli4.png
+  - /assets/anneli5.png
 ---
 
 "Tracing Ties" is a three-part digital collection of crafted objects from different parts of the world that have the same type of ornament in common. The chosen shapes are three of the more widespread symbols in Estonian traditional handicraft: the octagram, the double cross and the rhomb. These are often called “national symbols” and are used as decorations for souvenirs and on package design for local produce. This collection highlights the fact that these symbols are largely universal ornaments with a long history, found on traditional handicraft around the world. Instead of setting cultures apart, these symbols connect people from different places and times through a universal visual language. These ties cannot be proven and might as well be accidental. Nevertheless, this project takes the liberty to let go of facts for a moment and let the viewer speculate on the meaning of these similarities.
