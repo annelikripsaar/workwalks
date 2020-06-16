@@ -5,6 +5,7 @@ import { Link, graphql, useStaticQuery } from "gatsby"
 import GalleryMarquee from "./GalleryMarquee"
 import styled from "@emotion/styled"
 import { AnimatePresence, motion } from "framer-motion"
+import SEO from "./seo"
 
 const BWGalleryMarquee = styled(GalleryMarquee)`
   filter: grayscale(1);
@@ -37,6 +38,7 @@ export default function Layout({ children, pageContext: { id } }) {
   }, [id, activeElementRef.current])*/
   return (
     <>
+      <SEO title="Home"></SEO>
       <Global
         styles={css`
           body {
@@ -59,7 +61,7 @@ export default function Layout({ children, pageContext: { id } }) {
             >
               <GalleryMarquee images={node.frontmatter.galleryImages} />
             </Link>
-            <AnimatePresence>
+            <AnimatePresence initial={false}>
               {isActive && (
                 <motion.div
                   initial="closed"

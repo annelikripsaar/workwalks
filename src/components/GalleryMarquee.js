@@ -37,6 +37,10 @@ const MarqueeInner = styled.div`
   transform: translate3d(var(--move-initial), 0, 0);
   animation: ${marquee} 30s linear infinite;
   animation-play-state: running;
+
+  img {
+    width: 25vw;
+  }
 `
 
 export default function GalleryMarquee({ images, className }) {
