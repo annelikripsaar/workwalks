@@ -3,9 +3,9 @@ import styled from "@emotion/styled"
 import { keyframes } from "@emotion/core"
 
 const Marquee = styled.div`
-  -webkit-box-shadow: 0px -9px 16px 0px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px -9px 16px 0px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px -9px 16px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px -9px 16px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px -9px 16px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px -9px 16px 0px rgba(0, 0, 0, 0.5);
   position: relative;
   overflow: hidden;
   --offset: 0vw;
@@ -31,7 +31,7 @@ const MarqueeInner = styled.div`
   display: flex;
   overflow: visible;
   flex-wrap: nowrap;
-  max-height: 300px;
+  /* siin peab arvutama kui pikk ta tegelikult tuleb */
   width: 200vw;
   position: relative;
   transform: translate3d(var(--move-initial), 0, 0);
@@ -39,7 +39,8 @@ const MarqueeInner = styled.div`
   animation-play-state: running;
 
   img {
-    width: 25vw;
+    height: 200px;
+    margin-bottom: 0;
   }
 `
 
