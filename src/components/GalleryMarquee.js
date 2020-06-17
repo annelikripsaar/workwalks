@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import styled from "@emotion/styled"
 import { keyframes } from "@emotion/core"
 
@@ -41,20 +41,45 @@ const MarqueeInner = styled.div`
   img {
     height: 200px;
     margin-bottom: 0;
+    pointer-events: all;
   }
 `
 
 export default function GalleryMarquee({ images, className }) {
+  const [galleryOpen, setGalleryOpen] = useState(false)
+
+  function toggleGallery(event) {
+    // event.preventDefault()
+    setGalleryOpen(!galleryOpen)
+  }
+
   return (
-    <Marquee className={className}>
-      <MarqueeInner>
-        {images.map(imageSrc => (
-          <img src={imageSrc} key={imageSrc} alt="" />
-        ))}
-        {images.map(imageSrc => (
-          <img src={imageSrc} key={imageSrc} alt="" />
-        ))}
-      </MarqueeInner>
-    </Marquee>
+    <>
+      <Marquee className={className}>
+        <MarqueeInner>
+          {images.map(imageSrc => (
+            <img
+              src={imageSrc}
+              key={imageSrc}
+              alt=""
+              href={""}
+              key={imageSrc}
+              onClick={toggleGallery}
+            />
+          ))}
+          {images.map(imageSrc => (
+            <img
+              src={imageSrc}
+              key={imageSrc}
+              alt=""
+              href={""}
+              key={imageSrc}
+              onClick={toggleGallery}
+            />
+          ))}
+        </MarqueeInner>
+      </Marquee>
+      {galleryOpen && console.log("open")}
+    </>
   )
 }

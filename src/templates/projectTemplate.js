@@ -1,7 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
 import SEO from "../components/seo"
-import GalleryMarquee from "../components/GalleryMarquee"
 import styled from "@emotion/styled"
 import { keyframes } from "@emotion/core"
 
@@ -44,15 +43,26 @@ const TextMarqueeInner = styled.div`
   }
 `
 
-export default function Template({ data, pageContext, galleryImages }) {
-  const { id } = pageContext
+const TitleMarquee = styled.div`
+  background-color: black;
+  color: #fe5000;
+  height: 200px;
+`
+
+const TitleMarqueeInner = styled.div``
+
+export default function Template({ data, pageContext }) {
   const { markdownRemark } = data
   const { frontmatter, html, excerpt, fields } = markdownRemark
   return (
     <>
       <SEO title={frontmatter.title} description={excerpt} />
-      <h1>{frontmatter.title}</h1>
-      <h2>{frontmatter.author}</h2>
+      <TitleMarquee>
+        <TitleMarqueeInner>
+          <h1>{frontmatter.title}</h1>
+          <h2>{frontmatter.author}</h2>
+        </TitleMarqueeInner>
+      </TitleMarquee>
       <TextMarquee>
         <TextMarqueeInner>
           <span dangerouslySetInnerHTML={{ __html: fields.ru }} />

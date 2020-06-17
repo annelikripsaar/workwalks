@@ -58,6 +58,11 @@ export default function Layout({ children, pageContext: { id } }) {
             <Link
               to={isActive ? "" : node.fields.slug}
               ref={isActive ? activeElementRef : undefined}
+              style={
+                isActive
+                  ? { pointerEvents: "none", filter: "grayscale(0)" }
+                  : { pointerEvents: "initial", filter: "grayscale(1)" }
+              }
             >
               <GalleryMarquee images={node.frontmatter.galleryImages} />
             </Link>
