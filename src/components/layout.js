@@ -73,8 +73,8 @@ export default function Layout({ children, pageContext: { id } }) {
                   animate="open"
                   exit="closed"
                   variants={{
-                    open: { opacity: 1, height: "auto" },
-                    closed: { opacity: 0, height: 0 },
+                    open: { height: "auto" },
+                    closed: { height: 0 },
                   }}
                 >
                   {children}

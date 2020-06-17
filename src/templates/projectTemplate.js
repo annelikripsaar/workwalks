@@ -46,10 +46,49 @@ const TextMarqueeInner = styled.div`
 const TitleMarquee = styled.div`
   background-color: black;
   color: #fe5000;
-  height: 200px;
+  height: 100px;
+
+  position: relative;
+  overflow: hidden;
+  --offset: 3px;
+  --move-initial: calc(-50% + var(--offset));
+  --move-final: calc(0% + var(--offset));
+
+  &:hover > div {
+    animation-play-state: paused;
+  }
+
+  h1,
+  p {
+    font-size: 5rem;
+    font-weight: 500;
+    letter-spacing: -0.05em;
+    line-height: 1.05;
+  }
+
+  h1 {
+    text-transform: lowercase;
+    color: #fe5000;
+    -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fe5000;
+    margin-bottom: 0;
+    padding-top: 8px;
+  }
 `
 
-const TitleMarqueeInner = styled.div``
+const TitleMarqueeInner = styled.div`
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  height: 100%;
+  width: 200vw;
+  position: relative;
+  transform: translate3d(var(--move-initial), 0, 0);
+  animation: ${marquee} 40s linear infinite;
+  animation-play-state: running;
+`
 
 export default function Template({ data, pageContext }) {
   const { markdownRemark } = data
@@ -58,9 +97,18 @@ export default function Template({ data, pageContext }) {
     <>
       <SEO title={frontmatter.title} description={excerpt} />
       <TitleMarquee>
-        <TitleMarqueeInner>
+        <TitleMarqueeInner style={{ zIndex: 2 }}>
           <h1>{frontmatter.title}</h1>
-          <h2>{frontmatter.author}</h2>
+          <h1>{frontmatter.title}</h1>
+          <h1>{frontmatter.title}</h1>
+        </TitleMarqueeInner>
+      </TitleMarquee>
+      <TitleMarquee>
+        <TitleMarqueeInner>
+          <p>{frontmatter.author}</p>
+          <p>{frontmatter.author}</p>
+          <p>{frontmatter.author}</p>
+          <p>{frontmatter.author}</p>
         </TitleMarqueeInner>
       </TitleMarquee>
       <TextMarquee>
