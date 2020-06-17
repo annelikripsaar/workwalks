@@ -38,9 +38,10 @@ export default function Layout({ children, pageContext: { id } }) {
     }
   `)
   const images = data.allMarkdownRemark.edges.map(({ node }) =>
-    node.frontmatter.galleryImages.map(image =>
-      image.replace("/assets/", "/thumbnails/")
-    )
+    node.frontmatter.galleryImages.map(image => {
+      const thumbnail = image.replace("/assets/", "/thumbnails/")
+      return `${thumbnail.slice(0, thumbnail.lastIndexOf("."))}.jpg`
+    })
   )
   const activeElementRef = useRef()
   /*
