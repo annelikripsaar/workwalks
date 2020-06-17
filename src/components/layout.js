@@ -3,13 +3,9 @@ import { Global, css } from "@emotion/core"
 import Header from "../components/header"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import GalleryMarquee from "./GalleryMarquee"
-import styled from "@emotion/styled"
 import { AnimatePresence, motion } from "framer-motion"
 import SEO from "./seo"
-
-const BWGalleryMarquee = styled(GalleryMarquee)`
-  filter: grayscale(1);
-`
+import "../styles/global.css"
 
 export default function Layout({ children, pageContext: { id } }) {
   const data = useStaticQuery(graphql`

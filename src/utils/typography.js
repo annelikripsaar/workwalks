@@ -1,10 +1,10 @@
 import Typography from "typography"
-import "../../static/fonts/fonts.css"
+// import fontFiles from "../../static/fonts/fonts"
 
 const typography = new Typography({
   baseFontSize: "16px",
-  headerFontFamily: ["Tiina", "sans-serif"],
-  bodyFontFamily: ["Tiina", "serif"],
+  headerFontFamily: ["Niina", "sans-serif"],
+  bodyFontFamily: ["Niina", "serif"],
 })
 
 export const { scale, rhythm, options } = typography
