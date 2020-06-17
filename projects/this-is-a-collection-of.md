@@ -1,8 +1,19 @@
 ---
 title: This is a collection of...
 author: Johann Villmann
-est: .
-ru: .
+est: >-
+  <!--StartFragment-->
+
+
+  See on kogumik varjudest, skanneerimis joontest, tsensuurist, läbipaistvustest, post-ititest, kritseldustest, tolmu ja puru kübekestest.\
+
+  Peale selle, see on kogumik minule jagatud lugemis-materjalidest minu bakalaureuse õpingutel graafilise disaini osakonnas. Lugedes neid (skanneeritud-kopeeritud-pildistatud) tekste, olin lummatud neist juhuslikest esteetilistest omadustest – varjudest, skanneerimis-joontest, jne. Ja kuis koopiad on isikustatud. Neis on näha inimtegevuse jälgi, kellegi, enamjuhul juhendaja, fookuspunkti ja kommentaare, mõtteid ja vaeva mida on nähtud koopiate talletamisel.\
+
+  Projekti väljend toob esile hoolitsuse, mis esineb meie jagamise rituaalis.
+
+
+  <!--EndFragment-->
+ru: .nan
 galleryImages:
   - /assets/shadow.png
   - /assets/highlight1.png
