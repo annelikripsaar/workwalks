@@ -12,6 +12,8 @@ const Marquee = styled.div`
   --move-initial: calc(-50% + var(--offset));
   --move-final: calc(0% + var(--offset));
 
+  margin-top: ${props => (props.isHeader ? "0" : "-160px")};
+
   &:hover > div {
     animation-play-state: paused;
   }
@@ -39,24 +41,32 @@ const MarqueeInner = styled.div`
   animation-play-state: running;
 
   img {
-    height: 200px;
+    height: ${props => props.height};
     margin-bottom: 0;
     pointer-events: all;
   }
 `
 
-export default function GalleryMarquee({ images, className }) {
+export default function GalleryMarquee({
+  images,
+  className,
+  marqueeHeight,
+  isHeader,
+  active,
+}) {
   const [galleryOpen, setGalleryOpen] = useState(false)
 
   function toggleGallery(event) {
-    // event.preventDefault()
-    setGalleryOpen(!galleryOpen)
+    if (active) {
+      event.preventDefault()
+      setGalleryOpen(open => !open)
+    }
   }
 
   return (
     <>
-      <Marquee className={className}>
-        <MarqueeInner>
+      <Marquee className={className} isHeader={isHeader}>
+        <MarqueeInner height={marqueeHeight}>
           {images.map(imageSrc => (
             <img
               src={imageSrc}

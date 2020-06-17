@@ -1,11 +1,23 @@
 import React, { useRef, useEffect, Fragment } from "react"
 import { Global, css } from "@emotion/core"
+import styled from "@emotion/styled"
 import Header from "../components/header"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import GalleryMarquee from "./GalleryMarquee"
 import { AnimatePresence, motion } from "framer-motion"
 import SEO from "./seo"
 import "../styles/global.css"
+
+const StyledHeader = styled(Header)`
+  position: fixed;
+  z-index: 5;
+  width: 100vw;
+  top: 0%;
+`
+
+const Content = styled.div`
+  margin-top: 160px;
+`
 
 export default function Layout({ children, pageContext: { id } }) {
   const data = useStaticQuery(graphql`
@@ -25,6 +37,11 @@ export default function Layout({ children, pageContext: { id } }) {
       }
     }
   `)
+  const images = data.allMarkdownRemark.edges.map(({ node }) =>
+    node.frontmatter.galleryImages.map(image =>
+      image.replace("/assets/", "/thumbnails/")
+    )
+  )
   const activeElementRef = useRef()
   /*
   useEffect(() => {
@@ -44,42 +61,48 @@ export default function Layout({ children, pageContext: { id } }) {
         `}
       />
       <Link to={"/"}>
-        <Header />
+        <StyledHeader />
       </Link>
-
-      {data.allMarkdownRemark.edges.map(({ node }) => {
-        const isActive = node.id === id
-        return (
-          <Fragment key={node.id}>
-            <Link
-              to={isActive ? "" : node.fields.slug}
-              ref={isActive ? activeElementRef : undefined}
-              style={
-                isActive
-                  ? { pointerEvents: "none", filter: "grayscale(0)" }
-                  : { pointerEvents: "initial", filter: "grayscale(1)" }
-              }
-            >
-              <GalleryMarquee images={node.frontmatter.galleryImages} />
-            </Link>
-            <AnimatePresence initial={false}>
-              {isActive && (
-                <motion.div
-                  initial="closed"
-                  animate="open"
-                  exit="closed"
-                  variants={{
-                    open: { height: "auto" },
-                    closed: { height: 0 },
-                  }}
-                >
-                  {children}
-                </motion.div>
-              )}
-            </AnimatePresence>
-          </Fragment>
-        )
-      })}
+      <Content>
+        {data.allMarkdownRemark.edges.map(({ node }, index) => {
+          const isActive = node.id === id
+          return (
+            <Fragment key={node.id}>
+              <Link
+                to={isActive ? "" : node.fields.slug}
+                ref={isActive ? activeElementRef : undefined}
+                style={
+                  isActive
+                    ? { filter: "grayscale(0)" }
+                    : { filter: "grayscale(1)" }
+                }
+              >
+                <GalleryMarquee
+                  isHeader={false}
+                  marqueeHeight="320px"
+                  images={images[index]}
+                  active={isActive}
+                />
+              </Link>
+              <AnimatePresence initial={false}>
+                {isActive && (
+                  <motion.div
+                    initial="closed"
+                    animate="open"
+                    exit="closed"
+                    variants={{
+                      open: { height: "100%", marginBottom: "160px" },
+                      closed: { height: 0 },
+                    }}
+                  >
+                    {children}
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </Fragment>
+          )
+        })}
+      </Content>
     </>
   )
 }
