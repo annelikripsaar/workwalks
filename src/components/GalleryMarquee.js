@@ -52,44 +52,32 @@ export default function GalleryMarquee({
   className,
   marqueeHeight,
   isHeader,
-  active,
+  onClick,
 }) {
-  const [galleryOpen, setGalleryOpen] = useState(false)
-
-  function toggleGallery(event) {
-    if (active) {
-      event.preventDefault()
-      setGalleryOpen(open => !open)
-    }
-  }
-
   return (
-    <>
-      <Marquee className={className} isHeader={isHeader}>
-        <MarqueeInner height={marqueeHeight}>
-          {images.map(imageSrc => (
-            <img
-              src={imageSrc}
-              key={imageSrc}
-              alt=""
-              href={""}
-              key={imageSrc}
-              onClick={toggleGallery}
-            />
-          ))}
-          {images.map(imageSrc => (
-            <img
-              src={imageSrc}
-              key={imageSrc}
-              alt=""
-              href={""}
-              key={imageSrc}
-              onClick={toggleGallery}
-            />
-          ))}
-        </MarqueeInner>
-      </Marquee>
-      {galleryOpen && console.log("open")}
-    </>
+    <Marquee className={className} isHeader={isHeader}>
+      <MarqueeInner height={marqueeHeight}>
+        {images.map((imageSrc, index) => (
+          <img
+            src={imageSrc}
+            key={index}
+            alt=""
+            href={""}
+            onClick={event => onClick(event, index)}
+            data-attribute="SRL"
+          />
+        ))}
+        {images.map((imageSrc, index) => (
+          <img
+            src={imageSrc}
+            key={index + images.length}
+            alt=""
+            href={""}
+            onClick={event => onClick(event, index)}
+            data-attribute="SRL"
+          />
+        ))}
+      </MarqueeInner>
+    </Marquee>
   )
 }

@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import SEO from "../components/seo"
 import styled from "@emotion/styled"
 import { keyframes } from "@emotion/core"
+import { SRLWrapper } from "simple-react-lightbox"
 
 const TextMarquee = styled.div`
   position: relative;
