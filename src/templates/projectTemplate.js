@@ -11,6 +11,7 @@ const TextMarquee = styled.div`
   --offset: 30vw;
   --move-initial: calc(-25% + var(--offset));
   --move-final: calc(-125% + var(--offset));
+  padding: 16px 0;
 
   &:hover > div {
     animation-play-state: paused;
@@ -31,16 +32,24 @@ const TextMarqueeInner = styled.div`
   display: flex;
   overflow: visible;
   flex-wrap: nowrap;
-  max-height: 300px;
+  max-height: 240px;
   width: 3600px;
   position: relative;
   transform: translate3d(var(--move-initial), 0, 0);
   animation: ${marquee} 40s linear infinite;
   animation-play-state: running;
 
+  line-height: 1.3;
+
   & > span {
     min-width: 1200px;
-    column-count: 3;
+    column-width: 400px;
+    column-gap: 16px;
+    margin-right: 16px;
+
+    ${screenSize.sm} {
+      column-width: 300px;
+    }
   }
 `
 
@@ -65,7 +74,7 @@ const TitleMarquee = styled.div`
 
   h1,
   p {
-    font-size: 5rem;
+    font-size: 4.5rem;
     font-weight: 500;
     letter-spacing: -0.05em;
     line-height: 1.05;
@@ -100,6 +109,10 @@ const TitleMarqueeInner = styled.div`
   transform: translate3d(var(--move-initial), 0, 0);
   animation: ${marquee} 40s linear infinite;
   animation-play-state: running;
+
+  ${screenSize.sm} {
+    width: 700vw;
+  }
 `
 
 export default function Template({ data, pageContext }) {
@@ -109,7 +122,7 @@ export default function Template({ data, pageContext }) {
     <>
       <SEO title={frontmatter.title} description={excerpt} />
       <TitleMarquee>
-        <TitleMarqueeInner style={{ zIndex: 2 }}>
+        <TitleMarqueeInner>
           <h1>{frontmatter.title}</h1>
           <h1>{frontmatter.title}</h1>
           <h1>{frontmatter.title}</h1>

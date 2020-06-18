@@ -17,6 +17,15 @@ const StyledHeader = styled(Header)`
   z-index: 5;
   width: 100vw;
   top: 0%;
+  background-color: #fe5000;
+
+  img {
+    min-width: 916px;
+
+    ${screenSize.large} {
+      min-width: 1999px;
+    }
+  }
 `
 
 const Content = styled.div`
@@ -54,13 +63,13 @@ export default function Layout({ children, pageContext: { id } }) {
       }
     })
   )
-  // const activeElementRef = useRef()
-  /*
+  const activeElementRef = useRef()
+
   useEffect(() => {
     if (activeElementRef.current && id) {
       activeElementRef.current.scrollIntoView()
     }
-  }, [id, activeElementRef.current])*/
+  }, [id, activeElementRef.current])
   return (
     <>
       <SEO title="Home"></SEO>
@@ -70,6 +79,10 @@ export default function Layout({ children, pageContext: { id } }) {
             font-family: "Niina", serif;
             margin: 0;
             background-color: #fe5000;
+          }
+
+          a {
+            color: inherit;
           }
         `}
       />
@@ -109,7 +122,9 @@ const Row = ({ node, images, active: isActive, children }) => {
   }
 
   const isLarge = useMediaLayout(screenSize.largeScreen)
-  console.log(isLarge)
+
+  const randomAnimationSpeed = useRef(20 + Math.floor(Math.random() * 30))
+    .current
 
   return (
     <>
@@ -127,6 +142,7 @@ const Row = ({ node, images, active: isActive, children }) => {
           marqueeHeight="320px"
           images={images.map(image => image.thumbnail)}
           onClick={(event, index) => handleSelect(event, index)}
+          animationSpeed={randomAnimationSpeed + "s"}
         />
       </Link>
       <AnimatePresence initial={false}>
@@ -140,7 +156,7 @@ const Row = ({ node, images, active: isActive, children }) => {
                 height: "100%",
                 marginBottom: isLarge ? "240px" : "160px",
               },
-              closed: { height: 0 },
+              closed: { height: 0, marginBottom: isLarge ? "0px" : "0px" },
             }}
           >
             {children}
