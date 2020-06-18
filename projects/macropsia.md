@@ -16,11 +16,10 @@ est: >-
   Üldjuhul on sellelaadsete meeleseisunditega samastumiseks vaid kirjeldused ja visuaalsed katsetused pildi, video- või tekstiformaadis. Et vaataja saaks kogemusele sammu lähemale astuda, olen loonud 360 kraadise virtuaalreaalse keskkonna. Läbi videoteose kogeb vaataja minu interpretatsiooni makropsiast, milles on visualiseeritud nii tundeid kui ka silmaga nähtavaid kogemusi.
 
 
-  Juhendaja: Sean Yendrys\
+  Juhendaja: Sean Yendrys  
 
-  <https://www.youtube.com/watch?v=ZJe-Lm2ocUw&t=2s>\
+  <https://www.youtube.com/watch?v=ZJe-Lm2ocUw&t=2s>  
 
-  \
 
   Tänud: Sean Yendrys, Henry Peet, Joonas Timmi, Martin Juusu
 ru: |-
@@ -42,7 +41,7 @@ A few years ago I stumbled upon a Youtube video that introduced rare syndromes. 
 
 Generally there are only descriptions and visual experiments in image, video- or text format to express such states of mind. To take a step closer to the experience I have created a 360-degree virtual reality environment. Through thise video piece, the viewer experiences my interpretation of macropsia, in which both feelings and perceptible events are visualized.
 
-Supervisor: Sean Yendrys\
+Supervisor: Sean Yendrys  
 <https://www.youtube.com/watch?v=ZJe-Lm2ocUw&t=2s>
 
 Thanks: Sean Yendrys, Henry Peet, Joonas Timmi, Martin Juusu
