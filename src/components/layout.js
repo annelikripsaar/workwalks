@@ -61,6 +61,7 @@ export default function Layout({ children, pageContext: { id } }) {
       <Global
         styles={css`
           body {
+            font-family: "Niina", serif;
             margin: 0;
             background-color: #fe5000;
           }
