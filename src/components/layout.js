@@ -107,10 +107,13 @@ const Row = ({ node, images, active: isActive, children }) => {
       <Link
         to={isActive ? "" : node.fields.slug}
         style={
-          isActive ? { filter: "grayscale(0)" } : { filter: "grayscale(1)" }
+          isActive
+            ? { WebkitFilter: "grayscale(0)", filter: "grayscale(0)" }
+            : { WebkitFilter: "grayscale(1)", filter: "grayscale(1)" }
         }
       >
         <GalleryMarquee
+          className={!isActive && "gray"}
           isHeader={false}
           marqueeHeight="320px"
           images={images.map(image => image.thumbnail)}

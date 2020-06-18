@@ -17,6 +17,10 @@ const Marquee = styled.div`
   &:hover > div {
     animation-play-state: paused;
   }
+
+  &.gray img {
+    filter: grayscale(1);
+  }
 `
 
 const marquee = keyframes`
