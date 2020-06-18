@@ -21,11 +21,11 @@ est: >-
   <!--EndFragment-->
 ru: .nan
 galleryImages:
-  - /assets/shadow.png
-  - /assets/highlight1.png
-  - /assets/post-it.png
-  - /assets/highlight2.png
-  - /assets/base.png
+  - /assets/johann1.png
+  - /assets/johann2.png
+  - /assets/johann3.png
+  - /assets/johann4.png
+  - /assets/johann5.png
 ---
 <!--StartFragment-->
 
