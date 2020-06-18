@@ -1,6 +1,6 @@
 ---
 title: TASE '20 visual identity
-author: Indrek Sirkel
+author: Robin Siimann
 est: "**Mõeldes TASEst kui lõputööde festivalist, uurisime sõna festivali
   ajalugu ning selgus et festival on ajaloos tihedalt seostatud lõikusaja, saagi
   ning toiduga. Pidulikult toidulaualt ei puudu tihti tikitud kate, millest
