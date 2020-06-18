@@ -1,18 +1,25 @@
 @font-face {
   font-family: "Niina";
-  font-weight: 400;
+  src: url("Niina-Regular.eot");
+  src: local("Niina Regular"), local("Niina-Regular"),
+    url("Niina-Regular.eot?#iefix") format("embedded-opentype"),
+    url("Niina-Regular.woff2") format("woff2"),
+    url("Niina-Regular.woff") format("woff"),
+    url("Niina-Regular.ttf") format("truetype");
+  font-weight: normal;
   font-style: normal;
-  src: url("niina-regular.woff2") format("woff2"),
-    url("niina-regular.woff") format("woff");
-}
-@font-face {
-  font-family: "Niina";
-  font-weight: 600;
-  font-style: normal;
-  src: url("niina-medium.woff2") format("woff2"),
-    url("niina-medium.woff") format("woff");
+  font-display: swap;
 }
 
-body {
-  background-color: red;
+@font-face {
+  font-family: "Niina";
+  src: url("Niina-Medium.eot");
+  src: local("Niina Medium"), local("Niina-Medium"),
+    url("Niina-Medium.eot?#iefix") format("embedded-opentype"),
+    url("Niina-Medium.woff2") format("woff2"),
+    url("Niina-Medium.woff") format("woff"),
+    url("Niina-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
