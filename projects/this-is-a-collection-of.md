@@ -25,7 +25,7 @@ galleryImages:
   - /assets/highlight1.png
   - /assets/post-it.png
   - /assets/highlight2.png
-  - /assets/shadow.png
+  - /assets/base.png
 ---
 <!--StartFragment-->
 
