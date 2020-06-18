@@ -7,11 +7,13 @@ import GalleryMarquee from "./GalleryMarquee"
 import { AnimatePresence, motion } from "framer-motion"
 import SEO from "./seo"
 import "../styles/global.css"
+import { screenSize } from "../styles/screensizes"
+import { useMediaLayout } from "use-media"
 
 import Carousel, { Modal, ModalGateway } from "react-images"
 
 const StyledHeader = styled(Header)`
-  position: fixed;
+  position: sticky;
   z-index: 5;
   width: 100vw;
   top: 0%;
@@ -19,6 +21,10 @@ const StyledHeader = styled(Header)`
 
 const Content = styled.div`
   margin-top: 160px;
+
+  ${screenSize.large} {
+    margin-top: 240px;
+  }
 `
 
 export default function Layout({ children, pageContext: { id } }) {
@@ -102,6 +108,9 @@ const Row = ({ node, images, active: isActive, children }) => {
     }
   }
 
+  const isLarge = useMediaLayout(screenSize.largeScreen)
+  console.log(isLarge)
+
   return (
     <>
       <Link
@@ -127,7 +136,10 @@ const Row = ({ node, images, active: isActive, children }) => {
             animate="open"
             exit="closed"
             variants={{
-              open: { height: "100%", marginBottom: "160px" },
+              open: {
+                height: "100%",
+                marginBottom: isLarge ? "240px" : "160px",
+              },
               closed: { height: 0 },
             }}
           >

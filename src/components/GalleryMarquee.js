@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import styled from "@emotion/styled"
 import { keyframes } from "@emotion/core"
+import { screenSize } from "../styles/screensizes"
 
 const Marquee = styled.div`
   -webkit-box-shadow: 0px -9px 16px 0px rgba(0, 0, 0, 0.5);
@@ -13,6 +14,10 @@ const Marquee = styled.div`
   --move-final: calc(0% + var(--offset));
 
   margin-top: ${props => (props.isHeader ? "0" : "-160px")};
+
+  ${screenSize.large} {
+    margin-top: ${props => (props.isHeader ? "0" : "-240px")};
+  }
 
   &:hover > div {
     animation-play-state: paused;
@@ -48,6 +53,10 @@ const MarqueeInner = styled.div`
     height: ${props => props.height};
     margin-bottom: 0;
     pointer-events: all;
+
+    ${screenSize.large} {
+      height: calc(${props => props.height} * 1.5);
+    }
   }
 `
 

@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import SEO from "../components/seo"
 import styled from "@emotion/styled"
 import { keyframes } from "@emotion/core"
-import { SRLWrapper } from "simple-react-lightbox"
+import { screenSize } from "../styles/screensizes"
 
 const TextMarquee = styled.div`
   position: relative;
@@ -47,13 +47,17 @@ const TextMarqueeInner = styled.div`
 const TitleMarquee = styled.div`
   background-color: black;
   color: #fe5000;
-  height: 100px;
+  height: 80px;
 
   position: relative;
   overflow: hidden;
   --offset: 3px;
   --move-initial: calc(-50% + var(--offset));
   --move-final: calc(0% + var(--offset));
+
+  ${screenSize.large} {
+    height: 120px;
+  }
 
   &:hover > div {
     animation-play-state: paused;
@@ -65,6 +69,10 @@ const TitleMarquee = styled.div`
     font-weight: 500;
     letter-spacing: -0.05em;
     line-height: 1.05;
+
+    ${screenSize.large} {
+      font-size: 7rem;
+    }
   }
 
   h1 {
@@ -74,7 +82,10 @@ const TitleMarquee = styled.div`
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #fe5000;
     margin-bottom: 0;
-    padding-top: 8px;
+  }
+
+  p {
+    padding-bottom: 20px;
   }
 `
 
