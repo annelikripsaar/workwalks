@@ -10,6 +10,7 @@ est: >-
 
   Juhendaja: Ott Kagovere  
 
+
   Töö leiad [siit](http://tase.artun.ee/)
 ru: >-
   TASE ´20 визуальная идентификация
@@ -19,6 +20,7 @@ ru: >-
 
 
   Инструктор: Отт Каговере  
+
 
   Работу найдешь [здесь](http://tase.artun.ee/)
 galleryImages:
@@ -34,4 +36,5 @@ TASE '20 visual identity
 While working with and thinking about TASE as a graduation festival, we looked into the history of festivals. It turns out that a significant origin of festivals is in agriculture — connected to harvest and food. A dinner table during a feast is often not complete without an embroidered tablecloth. This influenced us mainly to draw direct inspiration from embroidery patterns and drafts, and in fact cloth itself is made from natural fibers. Also, there is an aesthetic connection with pixel graphics, hinting at the fact that the majority of this year’s graduation exhibition takes place online due to the pandemic. The main element of the visual identity is the logo, which is also used as an ornament, reminding a floral patterned cloth at grandmother’s. Thus the central topic of the project is craft and both its contrast and connection with reproduction.
 
 Supervisor: Ott Kagovere  
+
 Find the work [here](http://tase.artun.ee/)
