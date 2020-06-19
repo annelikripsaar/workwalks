@@ -5,7 +5,7 @@ est: >-
   Armastuskiri vernakulaarsele Tallinnale
 
 
-  Vernakulaardisain ehk amatöör-, igapäeva-, argidisain. See on miski, mida leidub linnaruumis kõikjal: ilusalongide sildid, keldriäri avamisajad uksel, muutunud avamisaegade teavitus samal uksel, turumaasikate hinnasildid. Siiski jäävad need reeglina erialasest diskursusest välja olles justkui visuaalkultuuri släng. Peavoolu ideaalid nagu ilu, luksuslikkus, samuti töökus ja professionaalsus on väikeäride siltidel kui kõverpeeglis, siirad taotlused on konventsionaalselt hea disaini kontekstis kohmakalt välja kukkunud. Kuid häälte paljusus ning nägemuste mitmekesisus on märk visuaalkultuuri heast tervisest. On aeg juuksuri- ja pandimajasildid (tagasihoidlikku) rambivalgusesse tuua!  
+  Vernakulaardisain ehk amatöör-, igapäeva-, argidisain. See on miski, mida leidub linnaruumis kõikjal: ilusalongide sildid, keldriäri avamisajad uksel, muutunud avamisaegade teavitus samal uksel, turumaasikate hinnasildid. Siiski jäävad need reeglina erialasest diskursusest välja, olles justkui visuaalkultuuri släng. Peavoolu ideaalid nagu ilu, luksuslikkus, samuti töökus ja professionaalsus on väikeäride siltidel kui kõverpeeglis, siirad taotlused on konventsionaalselt hea disaini kontekstis kohmakalt välja kukkunud. Kuid häälte paljusus ning nägemuste mitmekesisus on märk visuaalkultuuri heast tervisest. On aeg juuksuri- ja pandimajasildid (tagasihoidlikku) rambivalgusesse tuua!  
 
 
   Oma lõputöös üritangi vernakulaardisainimassiivi eri külgedelt järada, tehes seda läbi mitme erineva kategooria. Kümnes lühitrükises on toodud välja nii mängulisemad kui tõsisemad viisid, kuidas linnaümbrust kogeda, kuidas väärtustada ja leida aina kaugemaks muutuvast ümbrusest seda, mis on siiras, inimlik, vahetu, soe.
