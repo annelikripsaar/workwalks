@@ -94,13 +94,17 @@ function SEO({ description, lang, meta, title, url }) {
       <meta name="theme-color" content="#ffffff" />
 
       {pageUrl && <meta property="og:url" content={pageUrl} />}
-      {pageTitle && <meta property="og:title" content={pageTitle} />}
+      {pageTitle && (
+        <meta property="og:title" content={site.siteMetadata.title} />
+      )}
       {metaDescription && (
         <meta property="og:description" content={metaDescription} />
       )}
       {pageImage && <meta property="og:image" content={pageImage} />}
       <meta name="twitter:card" content="summary_large_image" />
-      {pageTitle && <meta name="twitter:title" content={pageTitle} />}
+      {pageTitle && (
+        <meta name="twitter:title" content={site.siteMetadata.title} />
+      )}
       {metaDescription && (
         <meta name="twitter:description" content={metaDescription} />
       )}
