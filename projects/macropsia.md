@@ -14,7 +14,7 @@ est: >-
   Juhendaja: Sean Yendrys
 
 
-  Find the work "[here](<https://www.youtube.com/watch?v=ZJe-Lm2ocUw&t=2s>)"
+  Find the work [here](<https://www.youtube.com/watch?v=ZJe-Lm2ocUw&t=2s>)
 ru: >-
   Макропсия
 
