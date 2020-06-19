@@ -36,7 +36,7 @@ async function optimizeGalleryImage(asset) {
     asset.lastIndexOf(".")
   )}.jpg`
   await sharp(fileName)
-    .resize({ width: 3000 })
+    .resize({ width: 3000, withoutEnlargement: true })
     .jpeg({ quality: 90 })
     .toFile(outputFile)
 }
