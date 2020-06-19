@@ -20,6 +20,9 @@ est: >-
   Tänud: Norman Orro, Sandra Nuut, Lieven Lahaye, Sean Yendrys
 
 
+  Töö leiad [siit](https://drive.google.com/drive/folders/1kBtr8P2OUTNW5B6lYjLGipitpM349u40?usp=sharing)
+
+
   <!--EndFragment-->
 ru: >-
   <!--StartFragment-->
@@ -38,6 +41,9 @@ ru: >-
 
 
   Благодарность: Норман Орро, Сандра Нуут, Ливен Лахай, Шон Йендрис
+
+
+  Работу найдешь [здесь](<Работу найдешь /здесь/>)
 
 
   <!--EndFragment-->
@@ -59,5 +65,7 @@ By attempting to understand and rethink the existing state of things, the projec
 Supervisor: Norman Orro
 
 Thanks: Norman Orro, Sandra Nuut, Lieven Lahaye, Sean Yendrys
+
+Find the work [here](https://drive.google.com/drive/folders/1kBtr8P2OUTNW5B6lYjLGipitpM349u40?usp=sharing)
 
 <!--EndFragment-->
