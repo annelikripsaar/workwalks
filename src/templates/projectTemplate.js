@@ -89,7 +89,6 @@ const TitleMarquee = styled.div`
   }
 
   h1 {
-    text-transform: lowercase;
     color: #fe5000;
     -webkit-text-fill-color: black; /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 1px;
