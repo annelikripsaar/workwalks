@@ -13,7 +13,6 @@ est: >-
 
   Juhendaja: Sean Yendrys  
 
-
   Find the work [here](https://www.youtube.com/watch?v=ZJe-Lm2ocUw&t=2s)
 ru: >-
   Макропсия
@@ -26,7 +25,6 @@ ru: >-
 
 
   Инструктор: Шон Йендри  
-
 
   Работу найдешь [здесь](https://www.youtube.com/watch?v=ZJe-Lm2ocUw&t=2s)
 galleryImages:
@@ -43,5 +41,4 @@ A few years ago I stumbled upon a Youtube video that introduced rare syndromes. 
 Generally there are only descriptions and visual experiments in image, video- or text format to express such states of mind. To take a step closer to the experience I have created a 360-degree virtual reality environment. Through thise video piece, the viewer experiences my interpretation of macropsia, in which both feelings and perceptible events are visualized.
 
 Supervisor: Sean Yendrys[](https://www.youtube.com/watch?v=ZJe-Lm2ocUw&t=2s)  
-
 Töö leiad [siit](https://www.youtube.com/watch?v=ZJe-Lm2ocUw&t=2s)
