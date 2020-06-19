@@ -20,7 +20,7 @@ const StyledHeader = styled(Header)`
   background-color: #fe5000;
 
   img {
-    min-width: 916px;
+    min-width: 1333px;
 
     ${screenSize.large} {
       min-width: 1999px;
