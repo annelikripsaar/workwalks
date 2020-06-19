@@ -20,9 +20,6 @@ est: >-
 
 
   Juhendaja: Maria Muuk
-
-
-  Tänud: Maria Muuk, Lugemik raamatupood & Hulda kohvik, Lõputu elu galerii, Camille Laurelli, Laura Jõemägi
 ru: >-
   Кровать - это то место, где мы проводим очень большую часть нашей жизни. Это
   частное, уютное убежище, между которым мы можем быть нашим собственным домом и
@@ -40,9 +37,6 @@ ru: >-
 
 
   Инструктор: Мария Муук
-
-
-  Благодарность: Мария Муук, книжный магазин Lugemik & кафе Hulda, Галерея Infinite Life, Лаура Йемяги
 galleryImages:
   - /assets/sigrid1.jpg
   - /assets/sigrid2.jpg
@@ -55,5 +49,3 @@ We spend an enormous part of our lives in bed. It’s a private and intimate she
 To find out more about stories on the blanket, follow @shelleylonddon on Instagram.
 
 Supervisor: Maria Muuk
-
-Thanks: Maria Muuk, Lugemik Bookshop & Hulda café, Infinite Life Gallery, Camille Laurelli, Laura Jõemägi
