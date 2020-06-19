@@ -54,7 +54,7 @@ module.exports = {
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
     },
-    "gatsby-plugin-remove-serviceworker"
+    "gatsby-plugin-remove-serviceworker",
     "gatsby-plugin-react-helmet",
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
