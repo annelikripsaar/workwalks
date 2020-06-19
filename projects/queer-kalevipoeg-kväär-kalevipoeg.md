@@ -29,7 +29,7 @@ ru: >-
   Инструктор: Отт Каговере
 
 
-  <https://gd.artun.ee/queerkalev/>
+  Работу найдешь [здес](<https://gd.artun.ee/queerkalev/>)
 galleryImages:
   - /assets/tase1.png
   - /assets/tase2.png
