@@ -29,15 +29,15 @@ ru: >-
 
   Работу найдешь [здесь](https://gd.artun.ee/queerkalev/)
 galleryImages:
-  - /assets/tase1.png
-  - /assets/tase2.png
-  - /assets/tase3.png
-  - /assets/tase4.png
-  - /assets/tase6.png
+  - /assets/roven_walks5.png
+  - /assets/rovenalt1.png
+  - /assets/rovenalt2.png
+  - /assets/roven_walks3.png
+  - /assets/roven_walks4.png
 ---
 Queer Kalevipoeg 
 
-The project is a collectively coloured digital quilt that consists of illustrations based on the Estonian national epic “Kalevipoeg”. It is a speculative interpretation that highlights sexual minorities, their identities and experiences that have been omitted from the original text. I initiated this project because I realized that queer history is incomplete and out of grasp for various reasons. Through collective colouring sessions of the quilt queer neo-folklore was created.
+The project is a collectively coloured digital quilt that consists of illustrations based on the Estonian national epic “Kalevipoeg”. It is a speculative interpretation that highlights sexual minorities, their identities and experiences that have been omitted from the original text. I initiated this project because I realized that queer history is incomplete and out of grasp for various reasons. Through collective colouring sessions of the quilt queer neo-folklore was created. The colourings took place in a web environment with family, friends and strangers. We talked freely about our emotions, music, queer-aesthetics and history while colouring. The illustrations depict, among other things, themes such as loss, hiding, resisting, love and fear.
 
-Supervisor: Ott Kagovere  
+Supervisor: Ott Kagovere\
 Find the work [here](https://gd.artun.ee/queerkalev/)

@@ -57,9 +57,11 @@ export default function Layout({ children, pageContext: { id } }) {
   const images = data.allMarkdownRemark.edges.map(({ node }) =>
     node.frontmatter.galleryImages.map(image => {
       const thumbnail = image.replace("/assets/", "/thumbnails/")
+      const gallery = image.replace("/assets/", "/gallery/")
       return {
         original: image,
         thumbnail: `${thumbnail.slice(0, thumbnail.lastIndexOf("."))}.jpg`,
+        gallery: `${gallery.slice(0, gallery.lastIndexOf("."))}.jpg`,
       }
     })
   )
@@ -173,7 +175,7 @@ const Row = ({ node, images, active: isActive, children }) => {
           >
             <Carousel
               currentIndex={selectedIndex}
-              views={images.map(image => ({ src: image.original }))}
+              views={images.map(image => ({ src: image.gallery }))}
             />
           </Modal>
         ) : null}
