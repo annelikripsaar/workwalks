@@ -6,18 +6,24 @@ est: >-
 
 
   “Queer Kalevipoeg” on kollektiivselt värvitud digitaalne vaip, mis koosneb illustratsioonidest Eesti rahvuseepose “Kalevipoeg” teemadel. Oma tööga esitan spekulatiivse kväär interpretatsiooni” seksuaalvähemustega seotud identiteetidest ning -kogemustest, mis on algmaterjalis puudu. Teose lähtepunktiks on arusaam, et kväär ajalugu on raskesti kättesaadav või muul viisil puudulik. Kollektiivsete illustratsioonide värvimiste abil püüab projekt luua turvalise ning aktsepteeriva keskkonna, mille pinnalt saab luua kväär neo-folkloori. Värvimised viidi läbi veebipõhises keskkonnas pere, sõprade ja võhivõõraste huvilistega. Värvimisi saatsid vabas vormis vestlused emotsioonidest, muusikast, kväär-esteetikast ning ajaloost. Illustratsioonid kujutavad (muuhulgas) sõnumeid kaotusest, peitmisest, vastuseisust, armastusest, hirmust.
-ru: “Queer Kalevipoeg” on kollektiivselt värvitud digitaalne vaip, mis koosneb
-  illustratsioonidest Eesti rahvuseepose “Kalevipoeg” teemadel. Oma tööga esitan
-  spekulatiivse kväär interpretatsiooni” seksuaalvähemustega seotud
-  identiteetidest ning -kogemustest, mis on algmaterjalis puudu. Teose
-  lähtepunktiks on arusaam, et kväär ajalugu on raskesti kättesaadav või muul
-  viisil puudulik. Kollektiivsete illustratsioonide värvimiste abil püüab
-  projekt luua turvalise ning aktsepteeriva keskkonna, mille pinnalt saab luua
-  kväär neo-folkloori. Värvimised viidi läbi veebipõhises keskkonnas pere,
-  sõprade ja võhivõõraste huvilistega. Värvimisi saatsid vabas vormis vestlused
-  emotsioonidest, muusikast, kväär-esteetikast ning ajaloost. Illustratsioonid
-  kujutavad (muuhulgas) sõnumeid kaotusest, peitmisest, vastuseisust,
-  armastusest, hirmust.
+ru: >-
+  «Квир Kalevipoeg» - это коллективно расписанный цифровой ковер, состоящий из
+  иллюстраций на тему эстонского национального эпоса «Kalevipoeg». В своей
+  работе я представляю умозрительную интерпретацию «идентичностей и опыта,
+  связанных с сексуальными меньшинствами, которые отсутствуют в исходном
+  материале. Отправной точкой работы является понимание того, что история Квира
+  труднодоступна или иным образом неполна. Рисуя коллективные иллюстрации,
+  проект стремится создать безопасную и приемлемую среду, на поверхности которой
+  можно создать Квир неофольклора. Картины были выполнены в веб-среде с семьей,
+  друзьями и незнакомцами. Картины сопровождались разговорами в свободной форме
+  об эмоциях, музыке, четвертичной эстетике и истории. Иллюстрации изображают
+  (среди прочего) сообщения о потере, сокрытии, сопротивлении, любви, страхе.
+
+
+  Инструктор: Отт Каговере
+
+
+  Благодарность: Отт Каговере, Ливен Лахай, Джеймс Лэнгдон, Майкл А. Фаулер, мои однокурсники, отдел графического дизайна в EKA, энтузиасты красок и мой парень
 galleryImages:
   - /assets/tase1.png
   - /assets/tase2.png
