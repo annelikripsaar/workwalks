@@ -17,9 +17,6 @@ est: >-
   Juhendaja: Norman Orro
 
 
-  Tänud: Norman Orro, Sandra Nuut, Lieven Lahaye, Sean Yendrys
-
-
   Töö leiad [siit](https://drive.google.com/drive/folders/1kBtr8P2OUTNW5B6lYjLGipitpM349u40?usp=sharing)
 
 
@@ -38,9 +35,6 @@ ru: >-
 
 
   Инструктор: Норман Орро
-
-
-  Благодарность: Норман Орро, Сандра Нуут, Ливен Лахай, Шон Йендрис
 
 
   Работу найдешь [здесь](<Работу найдешь /здесь/>)
@@ -63,8 +57,6 @@ The perception of masculinity, femininity and gender roles have been shifting th
 By attempting to understand and rethink the existing state of things, the project “This is the Moment” explores what does being a man mean and what it could mean in today’s world. The work tells three stories of liberation from the strings of raw masculine energy through the topics of mind, look and body, implementing personal and broader narratives. The lost men seek guidance via crystals, adornments, yoga practice, pop music and dancing in order to find themselves in an ecstatic moment, the all-embracing present.
 
 Supervisor: Norman Orro
-
-Thanks: Norman Orro, Sandra Nuut, Lieven Lahaye, Sean Yendrys
 
 Find the work [here](https://drive.google.com/drive/folders/1kBtr8P2OUTNW5B6lYjLGipitpM349u40?usp=sharing)
 
