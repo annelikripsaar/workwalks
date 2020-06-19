@@ -20,7 +20,7 @@ ru: >-
 
   Инструктор: Норман Орро  
 
-  Работу найдешь [здесь](<Работу найдешь /здесь/>)
+  Работу найдешь [здесь](https://drive.google.com/drive/folders/1kBtr8P2OUTNW5B6lYjLGipitpM349u40?usp=sharing)
 galleryImages:
   - /assets/mikk-oja_this-is-the-moment_visuaal-1.jpg
   - /assets/mikk-oja_this-is-the-moment_visuaal-2.jpg
