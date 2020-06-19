@@ -13,7 +13,6 @@ est: >-
 
   Juhendaja: Sean Yendrys  
 
-
   Töö leiad [siit](https://tracingties.com/)
 ru: >-
   Поиск соединений
@@ -26,7 +25,6 @@ ru: >-
 
 
   Инструктор: Шон Йендрис  
-
 
   Работу найдешь [здесь](https://tracingties.com/)
 galleryImages:
@@ -43,5 +41,4 @@ Tracing ties
 This collection highlights the fact that these symbols are largely universal ornaments with a long history, found on traditional handicraft around the world. Instead of setting cultures apart, these symbols connect people from different places and times through a universal visual language. These ties cannot be proven and might as well be accidental. Nevertheless, this project takes the liberty to let go of facts for a moment and let the viewer speculate on the meaning of these similarities.
 
 Supervisor: Sean Yendrys  
-
 Find the work [here](https://tracingties.com/)
