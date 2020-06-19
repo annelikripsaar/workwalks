@@ -23,18 +23,26 @@ est: >-
 
 
   Tänud: Maria Muuk, Lugemik raamatupood & Hulda kohvik, Lõputu elu galerii, Camille Laurelli, Laura Jõemägi
-ru: Voodi on koht, kus me veedame väga suure osa oma elust. See on privaatne,
-  intiimne pelgupaik, mille koduste ja lohutavate linade vahel saame olla meie
-  ise. Installatsioon “Seadistatud elulugu” kujutab üht elukogemust põlvkonnast,
-  kes on kasvanud üles nutiseade öökapil. Pilk, mille heidame ekraanile kohe
-  peale hommikul silmade avamist, asetab meid avalikku ruumi ja sotsiaalsesse
-  keskkonda. Piirid sõprade ja võõraste, privaatse ja jagatava, erilise ja igava
-  vahel hägustuvad aina enam, kui sotsiaalmeediast saab peamine vahend teekonnal
-  iseendani. Kuidas mõjutavad elukogemused ja traumad meie sotsiaalseid
-  harjumusi ja vastupidi? Kust tuleb soov end paljastada? “Seadistatud elulugu”
-  on performance ja installatsioon, kus autor jagab postituste ja lugude kaudu
-  teda vorminud kogemusi ja mälestusi otse voodist, mida katab tema elulugu
-  kujutav voodipesukomplekt.
+ru: >-
+  Кровать - это то место, где мы проводим очень большую часть нашей жизни. Это
+  частное, уютное убежище, между которым мы можем быть нашим собственным домом и
+  утешительными простынями. Инсталляция «Настроенная биография» отображает
+  жизненный опыт поколения, выросшего с смартфоным на тумбочке. Взгляд, который
+  мы видим на экране сразу после того, как утром открываем глаза, ставит нас в
+  общественное пространство и социальную среду. Границы между друзьями и
+  незнакомцами, частными и общими, особыми и скучными, становятся все более
+  размытыми, поскольку социальные сети становятся основным инструментом на пути
+  к самому себе. Как жизненный опыт и травмы влияют на наши социальные привычки
+  и наоборот? Откуда возникает желание раскрыться? «Набор биографии» - это
+  спектакль и инсталляция, где автор делится впечатлениями и воспоминаниями,
+  которые сформировали его прямо с кровати, накрытым комплектом постельного
+  белья с изображением его биографии.
+
+
+  Инструктор: Мария Муук
+
+
+  Благодарность: Мария Муук, книжный магазин Lugemik & кафе Hulda, Галерея Infinite Life, Лаура Йемяги
 galleryImages:
   - /assets/sigrid1.jpg
   - /assets/sigrid2.jpg
