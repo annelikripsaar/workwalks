@@ -29,11 +29,11 @@ ru: >-
 
   Работу найдешь [здесь](https://gd.artun.ee/queerkalev/)
 galleryImages:
-  - /assets/tase1.png
-  - /assets/tase2.png
-  - /assets/tase3.png
-  - /assets/tase4.png
-  - /assets/tase6.png
+  - /assets/roven_walks5.png
+  - /assets/rovenalt1.png
+  - /assets/rovenalt2.png
+  - /assets/roven_walks3.png
+  - /assets/roven_walks4.png
 ---
 Queer Kalevipoeg 
 
