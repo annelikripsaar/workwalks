@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Niina";
+  src: url("niina-medium.eot");
+  src: url("niina-medium.eot?#iefix") format("embedded-opentype"),
+    url("niina-medium.woff2") format("woff2"),
+    url("niina-medium.woff") format("woff"),
+    url("niina-medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Niina";
+  src: url("niina-regular.eot");
+  src: url("niina-regular.eot?#iefix") format("embedded-opentype"),
+    url("niina-regular.woff2") format("woff2"),
+    url("niina-regular.woff") format("woff"),
+    url("niina-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
