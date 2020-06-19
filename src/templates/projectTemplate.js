@@ -82,6 +82,10 @@ const TitleMarquee = styled.div`
     ${screenSize.large} {
       font-size: 7rem;
     }
+
+    ${screenSize.sm} {
+      font-size: 4rem;
+    }
   }
 
   h1 {
@@ -111,7 +115,7 @@ const TitleMarqueeInner = styled.div`
   animation-play-state: running;
 
   ${screenSize.sm} {
-    width: 700vw;
+    width: 850vw;
   }
 `
 
