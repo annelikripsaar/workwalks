@@ -11,13 +11,7 @@ est: >-
   Oma lõputöös üritangi vernakulaardisainimassiivi eri külgedelt järada, tehes seda läbi mitme erineva kategooria. Kümnes lühitrükises on toodud välja nii mängulisemad kui tõsisemad viisid, kuidas linnaümbrust kogeda, kuidas väärtustada ja leida aina kaugemaks muutuvast ümbrusest seda, mis on siiras, inimlik, vahetu, soe.
 
 
-  Formaat: komplekt kümnest trükisest
-
-
   Juhendaja: Indrek Sirkel
-
-
-  Tänud: Pärtel Eelmere, Kersti Heile, Patrick Zavadskis, Paul-Hendrik Piho, Sigrid Liira.
 ru: >-
   *Любовное письмо вернакулярному Таллинну*
 
@@ -28,13 +22,7 @@ ru: >-
   В своей диссертации я стараюсь следовать массиву народного дизайна, используя несколько разных категорий. В десяти коротких публикациях рассказывается как о более игривых, так и более серьезных способах знакомства с городской средой, о том, как ценить и находить во все более отдаленной среде то, что является искренним, человеческим, непосредственным, теплым.
 
 
-  Формат: набор из десяти публикаций
-
-
   Инструктор: Индрек Сиркель
-
-
-  Благодарность: Пяртель Элмер, Керсти Хейле, Патрик Завадскис, Пол-Хендрик Пихо, Сигрид Лийра
 galleryImages:
   - /assets/veeb4.png
   - /assets/veeb5.png
@@ -48,8 +36,4 @@ Vernacular design: amateur, local, everyday design. It's something that you can 
 
 In my graduation project I try to approach the array of vernacular design in different ways, doing so in several different categories. The ten zines show in both playful and more serious ways on how to experience an urban environment, how to value and find sincerity, humanity, immediacy warmth in these increasingly distant surroundings.
 
-Format: a set of ten zines
-
 Supervisor: Indrek Sirkel
-
-Thank You: Pärtel Eelmere, Kersti Heile, Patrick Zavadskis, Paul-Hendrik Piho, Sigrid Liira.
