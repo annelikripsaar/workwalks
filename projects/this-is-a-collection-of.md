@@ -16,7 +16,6 @@ est: >-
 
   Juhendaja: Ott Kagovere  
 
-
   Töö leiad [siit](https://thisisacollection.xyz/)
 ru: >-
   Это коллекция...
@@ -32,7 +31,6 @@ ru: >-
 
 
   Инструктор: Отт Каговере  
-
 
   Работу найдешь [здесь](https://thisisacollection.xyz/)
 galleryImages:
@@ -51,5 +49,4 @@ While reading these (scanned and photocopied) texts, I was mesmerized by certain
 The project displays acts of care that lie behind sharing information in a clumsy scanline.
 
 Supervisor: Ott Kagovere  
-
 Find the work [here](https://thisisacollection.xyz/)
