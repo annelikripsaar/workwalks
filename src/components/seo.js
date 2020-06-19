@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import { Helmet } from "react-helmet"
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ description, lang, meta, title, url }) {
   const { site } = useStaticQuery(graphql`
     query {
       site {
@@ -11,6 +11,8 @@ function SEO({ description, lang, meta, title }) {
           title
           description
           author
+          url
+          image
         }
       }
     }
@@ -18,6 +20,8 @@ function SEO({ description, lang, meta, title }) {
 
   const metaDescription = description || site.siteMetadata.description
   const pageTitle = title || site.siteMetadata.title
+  const pageUrl = url || site.siteMetadata.url
+  const pageImage = `${site.siteMetadata.url}${site.siteMetadata.image}`
 
   return (
     <Helmet
@@ -88,6 +92,19 @@ function SEO({ description, lang, meta, title }) {
       <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
       <meta name="msapplication-TileColor" content="#da532c" />
       <meta name="theme-color" content="#ffffff" />
+
+      {pageUrl && <meta property="og:url" content={pageUrl} />}
+      {pageTitle && <meta property="og:title" content={pageTitle} />}
+      {metaDescription && (
+        <meta property="og:description" content={metaDescription} />
+      )}
+      {pageImage && <meta property="og:image" content={pageImage} />}
+      <meta name="twitter:card" content="summary_large_image" />
+      {pageTitle && <meta name="twitter:title" content={pageTitle} />}
+      {metaDescription && (
+        <meta name="twitter:description" content={metaDescription} />
+      )}
+      {pageImage && <meta name="twitter:image" content={pageImage} />}
     </Helmet>
   )
 }

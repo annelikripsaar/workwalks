@@ -3,6 +3,8 @@ module.exports = {
     title: "Work Walks",
     description: `An online exhibition of thesis projects completed in isolation by the graduating class of the Department of Graphic Design of the Estonian Academy of Arts.`,
     author: `Estonian Academy of Arts' Department of Graphic Design`,
+    url: "https://walks.work",
+    image: "/assets/workwalks-imglink.jpg",
   },
   plugins: [
     {
