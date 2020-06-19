@@ -5,9 +5,7 @@ est: >-
   See hetk on praegu  
 
 
-  Mehelikkuse ja naiselikkuse kuvand ning ootused soorollidele on olnud läbi ajaloo pidevas teisenemises. Tavapärane arusaam maskuliinsusest eeldab mehelt tugevat füüsist, enesekindlat hoiakut ning juhtivat sotsiaalset positsiooni. Toksilisel maskuliinsusel on negatiivne mõju ühiskonnale ja selle liikmetele, kaasa arvatud meestele endile. Standardite järgimine või nende poole püüdlemine ei pruugi võimaldada mehe identiteedi, keha ning seksuaalsuse väljendust tema võimalikus mitmetahulisuses.  \
-
-  Püüdes hetkeseisu mõista ning ümber mõtestada, uurib teos “See hetk on praegu”, mida meheks olemine nüüdisaegses maailmas tähendab ning mida see võiks tähendada. Töö jutustab vaimu, välimuse ning keha vaatepunktide kaudu kolm jõulise maskuliinsuse kammitsaist vabanemise lugu, rakendades nii isiklikke kui ka üldisemaid narratiive. Ennast kaotanud mehed võtavad appi kristallid, piduehted, jooga, popmuusika ja tantsimise ning leiavad ennast seekaudu ekstaatilises hetkes, kõikehõlmavas olevikus.  
+  Mehelikkuse ja naiselikkuse kuvand ning ootused soorollidele on olnud läbi ajaloo pidevas teisenemises. Tavapärane arusaam maskuliinsusest eeldab mehelt tugevat füüsist, enesekindlat hoiakut ning juhtivat sotsiaalset positsiooni. Toksilisel maskuliinsusel on negatiivne mõju ühiskonnale ja selle liikmetele, kaasa arvatud meestele endile. Standardite järgimine või nende poole püüdlemine ei pruugi võimaldada mehe identiteedi, keha ning seksuaalsuse väljendust tema võimalikus mitmetahulisuses.  Püüdes hetkeseisu mõista ning ümber mõtestada, uurib teos “See hetk on praegu”, mida meheks olemine nüüdisaegses maailmas tähendab ning mida see võiks tähendada. Töö jutustab vaimu, välimuse ning keha vaatepunktide kaudu kolm jõulise maskuliinsuse kammitsaist vabanemise lugu, rakendades nii isiklikke kui ka üldisemaid narratiive. Ennast kaotanud mehed võtavad appi kristallid, piduehted, jooga, popmuusika ja tantsimise ning leiavad ennast seekaudu ekstaatilises hetkes, kõikehõlmavas olevikus.  
 
 
   Juhendaja: Norman Orro  \
@@ -17,9 +15,7 @@ ru: >-
   Этот момент сейчас  
 
 
-  Образ мужественности и женственности, а также ожидания в отношении гендерных ролей на протяжении всей истории постоянно менялись. Традиционное понимание мужественности требует от человека крепкого телосложения, уверенного отношения и ведущей социальной позиции. Токсичная мужественность оказывает негативное влияние на общество и его членов, включая самих мужчин. Приверженность или стремление к соблюдению стандартов может не позволить выразить личность, тело и сексуальность человека в его или ее потенциальном разнообразии.  \
-
-  В попытке понять и переосмыслить текущее состояние, книга «Этот момент сейчас» исследует, что значит быть человеком в современном мире и что оно может значить. Работа рассказывает три истории освобождения от власти могущественной мужественности через перспективы разума, внешности и тела, применяя как личные, так и более общие повествования. Мужчины, которые потеряли себя, прибегают к кристаллам, украшениям для вечеринок, йоге, поп-музыке и танцам, и, таким образом, оказываются в экстатическом моменте, являясь всеобъемлющим подарком.  
+  Образ мужественности и женственности, а также ожидания в отношении гендерных ролей на протяжении всей истории постоянно менялись. Традиционное понимание мужественности требует от человека крепкого телосложения, уверенного отношения и ведущей социальной позиции. Токсичная мужественность оказывает негативное влияние на общество и его членов, включая самих мужчин. Приверженность или стремление к соблюдению стандартов может не позволить выразить личность, тело и сексуальность человека в его или ее потенциальном разнообразии.  В попытке понять и переосмыслить текущее состояние, книга «Этот момент сейчас» исследует, что значит быть человеком в современном мире и что оно может значить. Работа рассказывает три истории освобождения от власти могущественной мужественности через перспективы разума, внешности и тела, применяя как личные, так и более общие повествования. Мужчины, которые потеряли себя, прибегают к кристаллам, украшениям для вечеринок, йоге, поп-музыке и танцам, и, таким образом, оказываются в экстатическом моменте, являясь всеобъемлющим подарком.  
 
 
   Инструктор: Норман Орро  \
