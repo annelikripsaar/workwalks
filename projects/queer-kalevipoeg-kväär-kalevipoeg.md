@@ -11,7 +11,7 @@ est: >-
   Juhendaja: Ott Kagovere
 
 
-  <https://gd.artun.ee/queerkalev/>
+  Töö leiad [siit](<https://gd.artun.ee/queerkalev/>)
 ru: >-
   «Квир Kalevipoeg» - это коллективно расписанный цифровой ковер, состоящий из
   иллюстраций на тему эстонского национального эпоса «Kalevipoeg». В своей
@@ -41,4 +41,4 @@ galleryImages:
 
 Supervisor: Ott kagovere
 
-<https://gd.artun.ee/queerkalev/>
+Find the work [here](<https://gd.artun.ee/queerkalev/>)
