@@ -1,5 +1,5 @@
 ---
-title: This is the Moment
+title: See hetk on praegu/This is the Moment
 author: Mikk Oja
 est: >-
   <!--StartFragment-->
@@ -18,12 +18,21 @@ est: >-
 
 
   <!--EndFragment-->
-ru: |-
+ru: >-
   <!--StartFragment-->
 
-  Инструктор: Норман Орро
 
-  Благодарность: Норман Орро, Сандра Нуут, Ливен Лахай, Шон Йендрис
+  Mehelikkuse ja naiselikkuse kuvand ning ootused soorollidele on olnud läbi ajaloo pidevas teisenemises. Tavapärane arusaam maskuliinsusest eeldab mehelt tugevat füüsist, enesekindlat hoiakut ning juhtivat sotsiaalset positsiooni. Toksilisel maskuliinsusel on negatiivne mõju ühiskonnale ja selle liikmetele, kaasa arvatud meestele endile. Standardite järgimine või nende poole püüdlemine ei pruugi võimaldada mehe identiteedi, keha ning seksuaalsuse väljendust tema võimalikus mitmetahulisuses. 
+
+
+  Püüdes hetkeseisu mõista ning ümber mõtestada, uurib teos “See hetk on praegu”, mida meheks olemine nüüdisaegses maailmas tähendab ning mida see võiks tähendada. Töö jutustab vaimu, välimuse ning keha vaatepunktide kaudu kolm jõulise maskuliinsuse kammitsaist vabanemise lugu, rakendades nii isiklikke kui ka üldisemaid narratiive. Ennast kaotanud mehed võtavad appi kristallid, piduehted, jooga, popmuusika ja tantsimise ning leiavad ennast seekaudu ekstaatilises hetkes, kõikehõlmavas olevikus.
+
+
+  Juhendaja: Norman Orro
+
+
+  Tänud: Norman Orro, Sandra Nuut, Lieven Lahaye, Sean Yendrys
+
 
   <!--EndFragment-->
 galleryImages:

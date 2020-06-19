@@ -7,7 +7,8 @@ export default function Header({ className }) {
       className={className}
       isHeader={true}
       marqueeHeight="160px"
-      images={["/assets/header.png"]}
+      images={["/assets/header.png", "/assets/header.png"]}
+      animationSpeed={"30s"}
     />
   )
 }

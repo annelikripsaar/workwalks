@@ -1,25 +1,21 @@
 @font-face {
   font-family: "Niina";
-  src: url("Niina-Regular.eot");
-  src: local("Niina Regular"), local("Niina-Regular"),
-    url("Niina-Regular.eot?#iefix") format("embedded-opentype"),
-    url("Niina-Regular.woff2") format("woff2"),
-    url("Niina-Regular.woff") format("woff"),
-    url("Niina-Regular.ttf") format("truetype");
+  src: url("niina-medium.eot");
+  src: url("niina-medium.eot?#iefix") format("embedded-opentype"),
+    url("niina-medium.woff2") format("woff2"),
+    url("niina-medium.woff") format("woff"),
+    url("niina-medium.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
   font-family: "Niina";
-  src: url("Niina-Medium.eot");
-  src: local("Niina Medium"), local("Niina-Medium"),
-    url("Niina-Medium.eot?#iefix") format("embedded-opentype"),
-    url("Niina-Medium.woff2") format("woff2"),
-    url("Niina-Medium.woff") format("woff"),
-    url("Niina-Medium.ttf") format("truetype");
-  font-weight: 500;
+  src: url("niina-regular.eot");
+  src: url("niina-regular.eot?#iefix") format("embedded-opentype"),
+    url("niina-regular.woff2") format("woff2"),
+    url("niina-regular.woff") format("woff"),
+    url("niina-regular.ttf") format("truetype");
+  font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }

@@ -5,7 +5,7 @@ est: >-
   <!--StartFragment-->
 
 
-  See on kogumik varjudest, skanneerimis joontest, tsensuurist, läbipaistvustest, post-it’itest, kritseldustest, tolmu ja puru kübekestest.\
+  See on kogumik varjudest, skanneerimisjoontest, tsensuurist, läbipaistvustest, post-it’itest, kritseldustest, tolmu ja puru kübekestest.  
 
   See on ka kogumik minule jagatud lugemismaterjalidest bakalaureuseõpingutel ajal graafilise disaini osakonnas. Lugedes neid skanneeritud, kopeeritud, pildistatud tekste, olin lummatud nende juhuslikest esteetilistest omadustest, nagu varjud, jooned jne. ning kuidas koopiad on isikustatud. Neis on näha inimtegevuse jälgi, enamasti juhendaja, kes on lause või kaks alla kriipsutanud, tema kommentaare, mõtteid ja vaeva. Projekt toob esile hoolitsuse, mis peitub kohmaka skaneeringu jagamise rituaalis.
 

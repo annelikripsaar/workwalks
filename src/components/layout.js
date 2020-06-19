@@ -7,18 +7,33 @@ import GalleryMarquee from "./GalleryMarquee"
 import { AnimatePresence, motion } from "framer-motion"
 import SEO from "./seo"
 import "../styles/global.css"
+import { screenSize } from "../styles/screensizes"
+import { useMediaLayout } from "use-media"
 
 import Carousel, { Modal, ModalGateway } from "react-images"
 
 const StyledHeader = styled(Header)`
-  position: fixed;
+  position: sticky;
   z-index: 5;
   width: 100vw;
   top: 0%;
+  background-color: #fe5000;
+
+  img {
+    min-width: 916px;
+
+    ${screenSize.large} {
+      min-width: 1999px;
+    }
+  }
 `
 
 const Content = styled.div`
   margin-top: 160px;
+
+  ${screenSize.large} {
+    margin-top: 240px;
+  }
 `
 
 export default function Layout({ children, pageContext: { id } }) {
@@ -48,13 +63,13 @@ export default function Layout({ children, pageContext: { id } }) {
       }
     })
   )
-  // const activeElementRef = useRef()
-  /*
+  const activeElementRef = useRef()
+
   useEffect(() => {
     if (activeElementRef.current && id) {
       activeElementRef.current.scrollIntoView()
     }
-  }, [id, activeElementRef.current])*/
+  }, [id, activeElementRef.current])
   return (
     <>
       <SEO title="Home"></SEO>
@@ -64,6 +79,10 @@ export default function Layout({ children, pageContext: { id } }) {
             font-family: "Niina", serif;
             margin: 0;
             background-color: #fe5000;
+          }
+
+          a {
+            color: inherit;
           }
         `}
       />
@@ -102,6 +121,11 @@ const Row = ({ node, images, active: isActive, children }) => {
     }
   }
 
+  const isLarge = useMediaLayout(screenSize.largeScreen)
+
+  const randomAnimationSpeed = useRef(20 + Math.floor(Math.random() * 30))
+    .current
+
   return (
     <>
       <Link
@@ -118,6 +142,7 @@ const Row = ({ node, images, active: isActive, children }) => {
           marqueeHeight="320px"
           images={images.map(image => image.thumbnail)}
           onClick={(event, index) => handleSelect(event, index)}
+          animationSpeed={randomAnimationSpeed + "s"}
         />
       </Link>
       <AnimatePresence initial={false}>
@@ -127,8 +152,11 @@ const Row = ({ node, images, active: isActive, children }) => {
             animate="open"
             exit="closed"
             variants={{
-              open: { height: "100%", marginBottom: "160px" },
-              closed: { height: 0 },
+              open: {
+                height: "100%",
+                marginBottom: isLarge ? "240px" : "160px",
+              },
+              closed: { height: 0, marginBottom: isLarge ? "0px" : "0px" },
             }}
           >
             {children}

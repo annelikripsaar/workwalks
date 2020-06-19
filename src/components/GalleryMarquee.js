@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import styled from "@emotion/styled"
 import { keyframes } from "@emotion/core"
+import { screenSize } from "../styles/screensizes"
 
 const Marquee = styled.div`
   -webkit-box-shadow: 0px -9px 16px 0px rgba(0, 0, 0, 0.5);
@@ -13,6 +14,10 @@ const Marquee = styled.div`
   --move-final: calc(0% + var(--offset));
 
   margin-top: ${props => (props.isHeader ? "0" : "-160px")};
+
+  ${screenSize.large} {
+    margin-top: ${props => (props.isHeader ? "0" : "-240px")};
+  }
 
   &:hover > div {
     animation-play-state: paused;
@@ -41,13 +46,18 @@ const MarqueeInner = styled.div`
   width: 200vw;
   position: relative;
   transform: translate3d(var(--move-initial), 0, 0);
-  animation: ${marquee} 30s linear infinite;
+  animation: ${marquee} ${props => props.animationSpeed} linear infinite;
   animation-play-state: running;
 
   img {
     height: ${props => props.height};
     margin-bottom: 0;
     pointer-events: all;
+    border-right: 2px solid #fe5000;
+
+    ${screenSize.large} {
+      height: calc(${props => props.height} * 1.5);
+    }
   }
 `
 
@@ -57,17 +67,18 @@ export default function GalleryMarquee({
   marqueeHeight,
   isHeader,
   onClick,
+  animationSpeed,
 }) {
   return (
     <Marquee className={className} isHeader={isHeader}>
-      <MarqueeInner height={marqueeHeight}>
+      <MarqueeInner height={marqueeHeight} animationSpeed={animationSpeed}>
         {images.map((imageSrc, index) => (
           <img
             src={imageSrc}
             key={index}
             alt=""
             href={""}
-            onClick={event => onClick(event, index)}
+            onClick={event => onClick && onClick(event, index)}
             data-attribute="SRL"
           />
         ))}
@@ -77,7 +88,7 @@ export default function GalleryMarquee({
             key={index + images.length}
             alt=""
             href={""}
-            onClick={event => onClick(event, index)}
+            onClick={event => onClick && onClick(event, index)}
             data-attribute="SRL"
           />
         ))}

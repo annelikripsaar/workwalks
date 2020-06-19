@@ -13,11 +13,11 @@ est: >-
   ühendavad need kirjad eri paigus ja eri aegadel elanud inimesi läbi üldkehtiva
   visuaalse keele. Neid sidemeid ei saa tõestada ning need võivad sama hästi
   olla juhuslikud. Sellegipoolest võtab see projekt endale vabaduse lasta
-  korraks faktidest lahti ja lasta vaatajal ise spekuleerida nende sarnasuste
+  korraks faktidest lahti ja lubab vaatajal ise spekuleerida nende sarnasuste
   üle.
 
 
-  Supervisor: Sean Yendrys  
+  Supervisor: Sean Yendrys\
 
   <a href="https://tracingties.com/" target="_blank">https://tracingties.com/</a>
 ru: >-
@@ -26,17 +26,17 @@ ru: >-
   ehk kaheksakand, topeltrist ja romb on eesti traditsioonilises käsitöös ühed
   laialdasemalt levinud kirjad. Tihti kutsutakse neid "rahvuslikeks sümboliteks"
   ja kasutatakse nii suveniiride kaunistamiseks kui ka kohaliku toidutoodangu
-  pakendikujunduses.Selle kogu eesmärk on rõhutada, et tegemist on üsnagi
+  pakendikujunduses. Selle kogu eesmärk on rõhutada, et tegemist on üsnagi
   universaalsete ja pika ajalooga sümbolitega, mida võib leida traditsioonilisel
   käsitööl üle maailma. Selle asemel, et eristada üht kultuuri teisest,
   ühendavad need kirjad eri paigus ja eri aegadel elanud inimesi läbi üldkehtiva
   visuaalse keele. Neid sidemeid ei saa tõestada ning need võivad sama hästi
   olla juhuslikud. Sellegipoolest võtab see projekt endale vabaduse lasta
-  korraks faktidest lahti ja lasta vaatajal ise spekuleerida nende sarnasuste
+  korraks faktidest lahti ja lubab vaatajal ise spekuleerida nende sarnasuste
   üle.
 
 
-  Supervisor: Sean Yendrys  
+  Supervisor: Sean Yendrys\
 
   <a href="https://tracingties.com/" target="_blank">https://tracingties.com/</a>
 galleryImages:
