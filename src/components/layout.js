@@ -1,16 +1,20 @@
 import React, { useRef, useEffect, Fragment, useState } from "react"
+import { Link, graphql, useStaticQuery } from "gatsby"
+
 import { Global, css } from "@emotion/core"
 import styled from "@emotion/styled"
-import Header from "../components/header"
-import { Link, graphql, useStaticQuery } from "gatsby"
-import GalleryMarquee from "./GalleryMarquee"
+
+import Carousel, { Modal, ModalGateway } from "react-images"
 import { AnimatePresence, motion } from "framer-motion"
+
+import Header from "./header"
+import AboutSection from "./AboutSection"
+import GalleryMarquee from "./GalleryMarquee"
+
 import SEO from "./seo"
 import "../styles/global.css"
 import { screenSize } from "../styles/screensizes"
 import { useMediaLayout } from "use-media"
-
-import Carousel, { Modal, ModalGateway } from "react-images"
 
 const StyledHeader = styled(Header)`
   position: sticky;
@@ -33,6 +37,22 @@ const Content = styled.div`
 
   ${screenSize.large} {
     margin-top: 240px;
+  }
+`
+
+const AboutButton = styled.button`
+  position: fixed;
+  left: 16px;
+  bottom: 16px;
+  background-color: #fe5000;
+  border: none;
+  font-size: 1.5rem;
+  padding: 8px 16px;
+  border: 1px solid black;
+  z-index: 2;
+
+  span {
+    pointer-events: none;
   }
 `
 
@@ -72,6 +92,13 @@ export default function Layout({ children, pageContext: { id } }) {
       activeElementRef.current.scrollIntoView()
     }
   }, [id, activeElementRef.current])
+
+  const [aboutVisible, setAboutVisible] = useState(false)
+
+  const removeFocus = e => {
+    e.target.blur()
+  }
+
   return (
     <>
       <SEO title="Home"></SEO>
@@ -88,7 +115,7 @@ export default function Layout({ children, pageContext: { id } }) {
           }
         `}
       />
-      <Link to={"/"}>
+      <Link onClick={() => setAboutVisible(false)} to={"/"}>
         <StyledHeader />
       </Link>
       <Content>
@@ -106,6 +133,14 @@ export default function Layout({ children, pageContext: { id } }) {
           )
         })}
       </Content>
+      <AboutButton
+        onClick={() => setAboutVisible(!aboutVisible)}
+        onMouseUp={removeFocus}
+      >
+        {aboutVisible && <span>✕</span>}
+        {!aboutVisible && <span>Info</span>}
+      </AboutButton>
+      <AboutSection visible={aboutVisible} />
     </>
   )
 }
